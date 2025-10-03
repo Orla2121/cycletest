@@ -1,0 +1,259 @@
+body {
+	gap: 56px;
+	padding-bottom: 120px;
+	--minContent: 1048;
+}
+
+.card-text-a {
+	--minContent: 236;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.header1 {
+	container: header1 / inline-size;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 192px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: left;
+	background-color: #1f1f1f;
+	padding: 32px 24px;
+	--minContent: 1048;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.header-nav3 {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	--minContent: 674;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.header-nav-items3 {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	font-weight: 400;
+	--minContent: 466;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.header-btn3 {
+	background-color: #ff5722;
+}
+
+.main-section1 {
+	margin: 0 auto;
+	max-width: 1000px;
+	gap: 56px;
+	align-self: center;
+	--minContent: 1000;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.title1 {
+	margin-left: 50px; margin-right: 50px; margin-top: 0;
+	color: #fff;
+}
+
+.main-section-projects {
+	container: main-section-projects / inline-size;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+	--minContent: 856;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-nav {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	text-align: center;
+	--minContent: 549;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-link-all {
+	text-decoration: underline;
+}
+
+.main-section-grid {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 38px;
+	row-gap: 24px;
+	align-self: stretch;
+	font-size: 14px;
+	font-weight: 500;
+	text-align: left;
+	--minContent: 856;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* project-card */
+
+.project-card {
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+	width: 260px;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	--minContent: 260;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.project-card-img {
+	flex-shrink: 0;
+	border-top-left-radius: 16px;
+	border-top-right-radius: 16px;
+	--minContent: 169;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.card-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	background-color: #181818;
+	padding: 16px 12px;
+	border-bottom-right-radius: 16px;
+	border-bottom-left-radius: 16px;
+	--minContent: 260;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end project-card*/
+
+
+.project-card1 .card-bottom-text {
+	color: #fff;
+	line-height: 1.143;
+}
+
+.project-card1 .card-text-ui-ux-design {
+	color: #888;
+	line-height: 1.714;
+}
+
+.project-card2 .card-bottom-text {
+	color: #fff;
+	line-height: 1.143;
+}
+
+.project-card2 .card-text-ui-ux-design {
+	color: #888;
+	line-height: 1.714;
+}
+
+.project-card3 .card-bottom-text {
+	color: #fff;
+	line-height: 1.143;
+}
+
+.project-card3 .card-text-ui-ux-design {
+	color: #888;
+	line-height: 1.714;
+}
+
+.project-card4 .card-bottom-text {
+	color: #fff;
+	line-height: 1.143;
+}
+
+.project-card4 .card-text-ui-ux-design {
+	color: #888;
+	line-height: 1.714;
+}
+
+
+
+/** breakpoints (margin / paddings) **/
+
+@media screen and (max-width: 1024px) {
+	.header1 {
+		padding-inline: var(--margin-sm);
+	}
+	.title1 {
+		margin-inline: 0;
+	}
+}
+
+
+
+/* container queries (flex rows) */
+
+@container body (width < 1047px) {
+	.header1 {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+}
+
+@container header1 (width < 673px) {
+	.header-nav3 {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.header-nav3 > * {
+		text-align: center;
+	}
+}
+
+@container main-section-projects (width < 548px) {
+	.main-section-nav {
+		flex-direction: column;
+		align-items: center;
+		gap: 13px;
+	}
+	.main-section-nav > * {
+		text-align: center;
+	}
+}

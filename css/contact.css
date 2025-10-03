@@ -1,0 +1,142 @@
+body {
+	gap: 56px;
+	padding-bottom: 86px;
+	--minContent: 1048;
+}
+
+.header1 {
+	align-self: unset;
+	text-align: left;
+}
+
+.header1 .row-btn {
+	background-color: #ff5722;
+}
+
+.main-section1 {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 56px;
+	flex-grow: 1;
+	align-self: center;
+	background-color: #1f1f1f;
+	padding: 56px 122px 48px 122px;
+	border-radius: 24px;
+	--minContent: 1000;
+	--hSizing: FIXED;
+	--vSizing: FILL;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: STRETCH;
+}
+
+.title1 {
+	align-self: stretch;
+	color: #fff;
+}
+
+.main-section-col1 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 32px;
+	line-height: 1.5;
+	text-align: left;
+	--minContent: 490;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-col2 {
+	width: 100%;
+	max-width: 490px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	--minContent: 490;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.input-group-top .input-group-text1 {
+	color: #fff;
+}
+
+.input-group1 .input-group-text1 {
+	color: #fff;
+}
+
+.main-section-col3 {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-text-service {
+	color: #fff;
+}
+
+.main-section-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	font-weight: 400;
+	padding: 11px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	--minContent: 96;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.input-group-bottom .input-group-text2 {
+	color: #fff;
+}
+
+.main-section-btn {
+	width: 100%;
+	max-width: 490px;
+	justify-content: center;
+	color: #000;
+	font-size: 16px;
+	text-align: center;
+	background-color: #ffeb3b;
+	padding-left: 24px;
+	padding-right: 24px;
+}
+
+
+
+/** breakpoints (margin / paddings) **/
+
+@media screen and (max-width: 1024px) {
+	.main-section1 {
+		padding-inline: var(--margin-md);
+	}
+	.main-section-btn {
+		padding-inline: var(--margin-sm);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.main-section1 {
+		padding-inline: var(--margin-sm);
+	}
+}

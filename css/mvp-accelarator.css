@@ -1,0 +1,222 @@
+body {
+	align-items: center;
+	gap: 56px;
+	--minContent: 1048;
+}
+
+.header1 .row-btn {
+	background-color: #ff5722;
+}
+
+.main-section1 .main-section-text {
+	color: #fff;
+}
+
+.main-section1 .main-section-img1 {
+	width: 211px;
+}
+
+.main-section1 .main-section-img-right {
+	width: 100%;
+	max-width: 416px;
+}
+
+.row2 .card-row {
+	gap: 55px;
+}
+
+.row2 .col-left2 {
+	width: 110%;
+}
+
+.row2 .col-left2 .row-bottom2 {
+	justify-content: center;
+	align-self: stretch;
+}
+
+.row2 .col-right2 {
+	width: 90%;
+}
+
+.row2 .col-right2 .row-bottom2 {
+	justify-content: center;
+	align-self: stretch;
+}
+
+.col2 .col-top1 .column-text4 {
+	color: #fff;
+}
+
+.col3 {
+	margin: 32px auto 0 auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	--minContent: 1000;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.row3 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 53px;
+	row-gap: 32px;
+	color: #fff;
+	text-align: center;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.col4 .column-btn {
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #000;
+}
+
+.footer1 .col-left1 {
+	width: 258px;
+}
+
+.footer1 .col-right1 {
+	width: 127px;
+	align-items: flex-start;
+}
+
+.footer1 .col-right1 .column-subtitle2 {
+	align-self: stretch;
+}
+
+.footer1 .col-right1 .column-col {
+	width: 127px;
+	align-items: flex-start;
+}
+
+.footer1 .col-right1 .column-text2 {
+	align-self: stretch;
+}
+
+.footer1 .col-right1 .column-text-saa-s-optimization {
+	align-self: stretch;
+}
+
+.footer1 .col-right1 .column-text-digital {
+	align-self: stretch;
+}
+
+.footer1 .footer-devicon1 {
+	margin-top: 0;
+}
+
+.footer1 .footer-devicon-jira {
+	margin-left: 80px;
+}
+
+.footer1 .footer-devicon-drupal {
+	margin-left: 120px;
+}
+
+.footer1 .footer-mdi-github {
+	margin-top: 12px;
+}
+
+.footer1 .footer-ic-baseline1 {
+	margin-left: 40px;
+}
+
+.footer1 .footer-logos-figma {
+	margin-left: 80px;
+}
+
+.footer1 .footer-logos-google1 {
+	margin-left: 120px;
+}
+
+.footer1 .footer-bi-javascript {
+	margin-top: 12px;
+}
+
+.footer1 .footer-logos-mysql {
+	margin-left: 40px;
+}
+
+.footer1 .footer-devicon-plain {
+	margin-left: 80px;
+}
+
+.footer1 .footer-logos-google2 {
+	margin-left: 120px;
+}
+
+.footer1 .footer-simple-icons {
+	margin-top: 12px;
+}
+
+.footer1 .footer-devicon2 {
+	margin-left: 40px;
+}
+
+.footer1 .footer-ri-php-line {
+	margin-left: 80px;
+}
+
+.footer1 .footer-logos-aws {
+	margin-left: 120px;
+}
+
+.footer1 .footer-devicon-typo3 {
+	margin-left: 80px; margin-top: 12px;
+}
+
+.footer1 .footer-logos-meta {
+	margin-left: 120px;
+}
+
+.footer1 .footer-logos-miro {
+	margin-top: 12px;
+}
+
+.footer1 .footer-logos-git {
+	margin-left: 40px;
+}
+
+.footer1 .footer-logos-hotjar {
+	margin-left: 80px;
+}
+
+.footer1 .footer-devicon-swift {
+	margin-left: 120px;
+}
+
+.footer1 .footer-devicon3 {
+	margin-left: 40px; margin-top: -19px;
+}
+
+.footer1 .footer-devicon4 {
+	margin-left: 80px;
+}
+
+.footer1 .footer-devicon-sketch {
+	margin-left: 120px;
+}
+
+.footer1 .footer-devicon-slack {
+	margin-top: -96px;
+}
+
+.footer1 .footer-logos-react {
+	margin-left: 40px;
+}
+
+.footer1 .footer-ic-baseline2 {
+	margin-left: 40px; margin-top: -168px;
+}

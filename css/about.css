@@ -1,0 +1,154 @@
+body {
+	gap: 56px;
+	color: #fff;
+	padding-bottom: 74px;
+	--minContent: 1048;
+}
+
+.header1 {
+	container: header1 / inline-size;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 192px;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: left;
+	background-color: #1f1f1f;
+	padding: 32px 24px;
+	--minContent: 1048;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.header-nav3 {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	--minContent: 674;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.header-nav-items3 {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	font-weight: 400;
+	--minContent: 466;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.header-btn3 {
+	background-color: #ff5722;
+}
+
+.main-section1 {
+	margin: 0 auto;
+	max-width: 1000px;
+	justify-content: center;
+	gap: 56px;
+	flex-grow: 1;
+	align-self: center;
+	--minContent: 1000;
+	--hSizing: FIXED;
+	--vSizing: FILL;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: STRETCH;
+}
+
+.title1 {
+	margin-left: 50px; margin-right: 50px;
+}
+
+.main-section-col1 {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	--minContent: 856;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-col2 {
+	container: col5 / inline-size;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	--minContent: 856;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-img2 {
+	flex-shrink: 0;
+}
+
+.stats1 {
+	gap: 24px;
+}
+
+.stats1 .card1 {
+	width: unset;
+	flex-shrink: unset;
+}
+
+.stats1 .card1 .card-text1 {
+	align-self: unset;
+}
+
+.main-section-text2 {
+	text-align: left;
+	--minContent: 856;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/** breakpoints (margin / paddings) **/
+
+@media screen and (max-width: 1024px) {
+	.header1 {
+		padding-inline: var(--margin-sm);
+	}
+	.title1 {
+		margin-inline: 0;
+	}
+}
+
+
+
+/* container queries (flex rows) */
+
+@container body (width < 1047px) {
+	.header1 {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+}
+
+@container header1 (width < 673px) {
+	.header-nav3 {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.header-nav3 > * {
+		text-align: center;
+	}
+}

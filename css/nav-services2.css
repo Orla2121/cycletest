@@ -1,0 +1,64 @@
+body {
+	padding-bottom: 269px;
+	--minContent: 1200;
+}
+
+.header1 .header-btn2 {
+	background-color: #ff5722;
+}
+
+.nav-services3 .card15 {
+	width: 102%;
+	padding: 13px 11px;
+	border: 1px solid #ff5722;
+}
+
+.nav-services3 .card15 .card-col3 {
+	width: 210px;
+	align-items: stretch;
+}
+
+.nav-services3 .card15 .card-text5 {
+	color: #ff5722;
+}
+
+.nav-services3 .card16 {
+	width: 105%;
+}
+
+.nav-services3 .card16 .card-group {
+	width: 29px;
+}
+
+.nav-services3 .card16 .card-col3 {
+	margin-left: 1px;
+	width: 217px;
+}
+
+.nav-services3 .card16 .card-text-launch-your {
+	align-self: stretch;
+}
+
+.nav-services3 .card16 .card-text-bottom2 {
+	margin-left: 1px; margin-right: 1px; margin-top: 1px;
+}
+
+.nav-services3 .card17 {
+	width: 98%;
+}
+
+.nav-services3 .card17 .card-col3 {
+	width: 201px;
+}
+
+.nav-services3 .card17 .card-text-launch-your {
+	align-self: stretch;
+}
+
+.nav-services3 .card18 {
+	width: 92%;
+}
+
+.nav-services3 .card19 {
+	width: 103%;
+}

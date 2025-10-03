@@ -1,0 +1,154 @@
+body {
+	position: relative;
+	display: block;
+	flex-direction: unset;
+	justify-content: unset;
+	color: #fff;
+	--minContent: 0;
+}
+
+.header1 {
+	top: 0; left: 0; right: 0; 
+}
+
+.header1 .header-btn1 {
+	background-color: #ff5722;
+}
+
+.subtitle-mobile-developer {
+	position: absolute; top: 182px; left: 100px; 
+	--minContent: 205;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.row2 {
+	position: absolute; top: 222px; left: 100px; 
+	align-self: unset;
+}
+
+.text-job-description {
+	position: absolute; top: 270px; left: 100px; 
+	--minContent: 124;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.text-ipsum-vitae {
+	position: absolute; top: 317px; left: 100px; right: 660px; 
+	--minContent: 440;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.col2 {
+	position: absolute; top: 182px; right: 100px; 
+	width: calc(100% - 200px);
+	max-width: 490px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	--minContent: 490;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MAX;
+	--pConstraintVertical: MIN;
+}
+
+.input-group-top {
+	line-height: 1.5;
+}
+
+.input-group-top .input-group-input {
+	color: unset;
+	border: 1px solid #ffeb3b;
+}
+
+.input-group1 {
+	line-height: 1.5;
+}
+
+.input-group1 .input-group-input {
+	color: unset;
+	border: 1px solid #ffeb3b;
+}
+
+.col3 .column-row3 {
+	line-height: 1.5;
+	border: 1px solid #ffeb3b;
+}
+
+.col-bottom {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.row-top3 {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	--minContent: 156;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.text2 {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	--minContent: 108;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MAX;
+}
+
+.text3 {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.167;
+	--minContent: 48;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MAX;
+}
+
+.text-pellentesque {
+	color: unset;
+	font-style: unset;
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: unset;
+	text-align: unset;
+	background-color: unset;
+	border: 1px solid #ffeb3b;
+}
+
+.btn1 {
+	position: absolute; top: 750px; right: 100px; 
+	width: calc(100% - 200px);
+	max-width: 490px;
+	justify-content: center;
+	color: #000;
+	font-size: 16px;
+	line-height: 1.5;
+	text-align: center;
+	background-color: #ffeb3b;
+	padding-left: 24px;
+	padding-right: 24px;
+}

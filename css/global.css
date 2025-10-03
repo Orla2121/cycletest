@@ -1,0 +1,2091 @@
+
+:root {
+	/* responsive margins / paddings */
+	--margin-sm: 16px;
+	--margin-md: 32px;
+}
+
+* {
+	--min-screen-size: 430;
+	--max-screen-size: 1200;
+	--interpolate-diff: calc(var(--max-font-size) - var(--min-font-size));
+	--interpolate: clamp(calc(var(--min-font-size) * 1px), calc((var(--min-font-size) * 1px) + var(--interpolate-diff) * ((100vw - calc(var(--min-screen-size) * 1px)) / (var(--max-screen-size) - var(--min-screen-size)))), calc(var(--max-font-size) * 1px));
+}
+
+html {
+	height: 100%;
+	font-size: 16px;
+}
+
+body {
+	container: body / inline-size;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Inter';
+	letter-spacing: 0px;
+	background-color: #181818;
+	overflow: auto;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: STRETCH;
+}
+
+
+
+/* text utility classes */
+
+.subtitle {
+	--min-font-size: 18; --max-font-size: 24; font-size: var(--interpolate);
+	font-family: 'Inter';
+	font-weight: 700;
+	line-height: 1.333;
+	letter-spacing: 0px;
+}
+
+.text1 {
+	--min-font-size: 15; --max-font-size: 16; font-size: var(--interpolate);
+	font-family: 'Inter';
+	font-weight: 400;
+	line-height: 1.5;
+	letter-spacing: 0px;
+}
+
+.sub-text {
+	color: #ff5722;
+}
+
+.sub-text2 {
+	color: #ff5722;
+	--min-font-size: 15; --max-font-size: 16; font-size: var(--interpolate);
+}
+
+.sub-text-white {
+	color: #fff;
+}
+
+.sub-text-white2 {
+	color: #fff;
+	--min-font-size: 15; --max-font-size: 16; font-size: var(--interpolate);
+}
+
+.sub-text3 {
+	--min-font-size: 15; --max-font-size: 16; font-size: var(--interpolate);
+}
+
+
+
+/* section utility classes */
+
+.section2 {
+	display: flex;
+	flex-direction: column;
+	padding: 64px 100px 0 100px;
+}
+
+.section1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 24px;
+}
+
+
+
+/* ui objects utility classes */
+
+.card-dark1 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	background-color: #1f1f1f;
+	padding: 24px;
+	border-radius: 16px;
+}
+
+.card-dark3 {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	background-color: #1f1f1f;
+	padding: 56px 72px 48px 72px;
+	border-radius: 24px;
+}
+
+.circle-black {
+	box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.45);
+	width: 32px;
+	background-color: #000;
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.card-dark2 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	background-color: #1f1f1f;
+	padding: 24px 24px 0 24px;
+	border-radius: 24px;
+}
+
+
+
+/* button hover utility classes */
+
+.hover-bright:hover {
+	filter: brightness(1.2);
+}
+
+.hover-dark:hover {
+	filter: brightness(0.85);
+}
+
+.hover-zoom:hover {
+	scale: 1.05;
+}
+
+
+
+/* row-a */
+
+.row-a {
+	container: row-a / inline-size;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 193px;
+	align-self: stretch;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #1f1f1f;
+	padding: 32px 24px;
+	--minContent: 1048;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.row-nav {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	--minContent: 673;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-nav-items {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	font-weight: 400;
+	--minContent: 465;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+/* end row-a*/
+
+
+
+
+/* logo */
+
+.logo {
+	width: 134px;
+	flex-shrink: 0;
+	--minContent: 134;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.logo-clip-path {
+	--minContent: 87;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end logo*/
+
+
+
+
+/* row-b */
+
+.row-b {
+	display: flex;
+	align-items: center;
+	--minContent: 90;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-mingcute {
+	width: 24px;
+	flex-shrink: 0;
+	--minContent: 24;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+/* end row-b*/
+
+
+.text-a {
+	--minContent: 66;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.btn-a {
+	display: flex;
+	font-style: normal;
+	font-weight: 700;
+	letter-spacing: 0px;
+	text-align: left;
+	padding: 14px 25px 14px 24px;
+	border-radius: 6px;
+	--minContent: 136;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.title-a {
+	--min-font-size: 27; --max-font-size: 44; font-size: var(--interpolate);
+	font-weight: 600;
+	line-height: 1.455;
+	--minContent: 840;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.text-b {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	--minContent: 482;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.subtitle-a {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.333;
+	--minContent: 540;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.text-d {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	--minContent: 540;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.img-b {
+	transform-origin: 50% 50%;
+	border: 1px solid #fff;
+	border-radius: 16px;
+	--minContent: 260;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* stats */
+
+.stats {
+	display: flex;
+	align-items: center;
+	background-color: #ff5722;
+	padding: 24px;
+	border-radius: 24px;
+	--minContent: 928;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+/* end stats*/
+
+
+
+
+/* card-a */
+
+.card-a {
+	width: 184px; height: 106px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	flex-shrink: 0;
+	background-color: #1f1f1f;
+	padding: 24px;
+	border-radius: 16px;
+	--minContent: 184;
+	--hSizing: HUG;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.card-row-top {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 1;
+	text-align: left;
+	--minContent: 49;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.card-bxs-calendar {
+	width: 24px;
+	flex-shrink: 0;
+	--minContent: 24;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.card-subtitle1 {
+	--minContent: 17;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.card-text1 {
+	align-self: stretch;
+	font-size: 12px;
+	font-weight: 500;
+	text-transform: uppercase;
+	line-height: 2;
+	text-align: center;
+	--minContent: 136;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+/* end card-a*/
+
+
+.subtitle-b {
+	color: #ff5722;
+	--min-font-size: 18; --max-font-size: 24; font-size: var(--interpolate);
+	font-weight: 700;
+	line-height: 1.333;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* footer */
+
+.footer {
+	container: footer / inline-size;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 55px;
+	align-self: stretch;
+	color: #fff;
+	background-color: #1f1f1f;
+	padding: 48px 24px;
+	--minContent: 841;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-title {
+	width: 100%;
+	max-width: 1152px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 32px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.714;
+	--minContent: 793;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.footer-logo {
+	width: 182px;
+	--minContent: 182;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.footer-clip-path {
+	--minContent: 118;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-text {
+	align-self: stretch;
+	--minContent: 793;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-nav-section {
+	container: footer-nav-section / inline-size;
+	width: 100%;
+	max-width: 1000px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-bottom: 19px;
+	--minContent: 693;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.footer-nav {
+	margin-top: 19px;
+	display: flex;
+	align-items: center;
+	gap: 164px;
+	--minContent: 549;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.footer-icons {
+	margin-top: -17px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	--minContent: 144;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.footer-logos-nodejs {
+	position: relative;
+	margin-left: 1px; margin-top: 18px;
+	width: 22px; height: 13px;
+	flex-shrink: 0;
+	--minContent: 23;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-img1 {
+	position: absolute; bottom: 0; left: 36%; 
+	width: 23%;
+	--minContent: 3;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: SCALE;
+}
+
+.footer-img2 {
+	position: absolute; top: 0; left: 0; 
+	width: 100%;
+	--minContent: 14;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: SCALE;
+}
+
+.footer-img3 {
+	position: absolute; top: 38%; right: 9%; 
+	width: 5%;
+	--minContent: 1;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: SCALE;
+}
+
+.footer-group {
+	position: absolute; top: 3px; left: 6px; 
+	width: 5px; height: 5px;
+	--minContent: 5;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-img4 {
+	position: absolute; top: 0; left: 0; 
+	width: 100%;
+	--minContent: 3;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: SCALE;
+}
+
+.footer-mask-group1 {
+	position: absolute; top: 0; left: 0; 
+	width: 5px;
+	--minContent: 5;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.footer-mask-group2 {
+	position: absolute; top: 0; left: 0; 
+	width: 5px;
+	--minContent: 5;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+/* end footer*/
+
+
+
+
+/* column-b */
+
+.column-b {
+	display: flex;
+	flex-direction: column;
+	gap: 22px;
+	flex-shrink: 0;
+	--minContent: 258;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.column-col {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	--minContent: 258;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column-b*/
+
+
+.column-text-a {
+	--minContent: 258;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.footer-devicon {
+	margin-top: -24px;
+	width: 24px;
+	flex-shrink: 0;
+	--minContent: 24;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.text-e {
+	color: #ff5722;
+	font-weight: 500;
+	--minContent: 63;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+
+
+/* title-b */
+
+.title-b {
+	margin-top: 4px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	text-align: center;
+	--minContent: 856;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end title-b*/
+
+
+.text-we {
+	--min-font-size: 15; --max-font-size: 16; font-size: var(--interpolate);
+	font-weight: 400;
+	line-height: 1.5;
+	--minContent: 756;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* header-a */
+
+.header-a {
+	container: header-a / inline-size;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 192px;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #1f1f1f;
+	padding: 32px 24px;
+	--minContent: 1048;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.header-nav1 {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	--minContent: 674;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.header-nav-items1 {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	font-weight: 400;
+	--minContent: 466;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+/* end header-a*/
+
+
+
+
+/* row-d */
+
+.row-d {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	align-self: stretch;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.333;
+	--minContent: 161;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.row-row-left {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	--minContent: 64;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-basil-location {
+	width: 16px;
+	flex-shrink: 0;
+	--minContent: 16;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-text-remote {
+	--minContent: 44;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-row-right {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding-left: 2px;
+	--minContent: 73;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-circle1 {
+	position: relative;
+	width: 13px; height: 13px;
+	flex-shrink: 0;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	--minContent: 13;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-img2 {
+	position: absolute; top: 27%; left: 45%; 
+	width: 36%;
+	--minContent: 3;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: SCALE;
+}
+
+.row-text-cet-only {
+	--minContent: 53;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+/* end row-d*/
+
+
+
+
+/* input-group-a */
+
+.input-group-a {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end input-group-a*/
+
+
+.text-f {
+	--min-font-size: 15; --max-font-size: 16; font-size: var(--interpolate);
+	font-weight: 500;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.input-your {
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0px;
+	text-align: left;
+	background-color: unset;
+	padding: 11px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.text-g {
+	--minContent: 48;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.img-c {
+	width: 24px;
+	flex-shrink: 0;
+	--minContent: 24;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+
+
+/* input-group-b */
+
+.input-group-b {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.input-group-your-message {
+	height: 168px;
+	flex-shrink: 0;
+	color: rgba(255, 255, 255, 0.5);
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0px;
+	text-align: left;
+	background-color: unset;
+	padding: 11px 11px 131px 11px;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end input-group-b*/
+
+
+
+
+/* main-section */
+
+.main-section {
+	container: main-section / inline-size;
+	margin: 0 auto;
+	width: 90%; height: 608px;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 56px;
+	flex-shrink: 0;
+	text-align: center;
+	background-color: #1f1f1f;
+	padding: 56px 72px;
+	border-radius: 24px;
+	--minContent: 1000;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-title {
+	margin: 0 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	align-self: stretch;
+	--minContent: 856;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-subtitle {
+	color: #ff5722;
+	--min-font-size: 21; --max-font-size: 32; font-size: var(--interpolate);
+	font-weight: 600;
+	line-height: 2;
+	--minContent: 756;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-row-bottom {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	--minContent: 856;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-col-left {
+	width: 197px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex-shrink: 0;
+	--minContent: 197;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+/* end main-section*/
+
+
+.main-section-img-a {
+	flex-shrink: 0;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	--minContent: 130;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.main-section-img-b {
+	flex-shrink: 0;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	--minContent: 211;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+
+
+/* row-e */
+
+.row-e {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	align-items: center;
+	gap: 40px;
+	--minContent: 1000;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.card-right {
+	width: 88%;
+	align-items: stretch;
+	gap: 32px;
+	flex-grow: 1;
+	color: #fff;
+	padding-bottom: 24px;
+	--minContent: 420;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.card-col2 {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	--minContent: 372;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.card-col-bottom {
+	container: card-col-bottom / inline-size;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	--minContent: 372;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.card-row {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.429;
+	letter-spacing: -0.28px;
+	--minContent: 372;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end row-e*/
+
+
+
+
+/* main */
+
+.main {
+	width: 113%;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	flex-grow: 1;
+	--minContent: 540;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.main-subtitle {
+	color: #ff5722;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.333;
+	--minContent: 540;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.main-text {
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+	--minContent: 540;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end main*/
+
+
+
+
+/* column-c */
+
+.column-c {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.429;
+	--minContent: 372;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.column-img {
+	flex-shrink: 0;
+	border-radius: 16px;
+	--minContent: 242;
+	--hSizing: FILL;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.column-text3 {
+	--minContent: 372;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column-c*/
+
+
+
+
+/* row-f */
+
+.row-f {
+	margin: 0 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	padding: 16px 11px;
+	border-top: 1px solid #323232;
+	border-bottom: 1px solid #323232;
+	--minContent: 346;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.row-circle-carbon {
+	position: relative;
+	flex-shrink: 0;
+	aspect-ratio: 1 / 1;
+	--minContent: 32;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-img3 {
+	position: absolute; top: 25%; left: 33%; 
+	width: 33%;
+	--minContent: 7;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: SCALE;
+}
+
+.row-circle2 {
+	position: relative;
+	flex-shrink: 0;
+	aspect-ratio: 1 / 1;
+	--minContent: 32;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-img4 {
+	position: absolute; top: 25%; left: 25%; 
+	width: 50%;
+	--minContent: 10;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: SCALE;
+}
+
+.row-circle3 {
+	position: relative;
+	flex-shrink: 0;
+	aspect-ratio: 1 / 1;
+	--minContent: 32;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-img5 {
+	position: absolute; top: 23%; left: 23%; 
+	width: 53%;
+	--minContent: 11;
+	--hSizing: FILL;
+	--vSizing: FILL;
+	--pConstraintHorizontal: SCALE;
+	--pConstraintVertical: SCALE;
+}
+/* end row-f*/
+
+
+.row-line {
+	margin-top: -2px;
+	width: 50px; height: 0;
+	flex-shrink: 0;
+	border-top: 2px solid #181818;
+	border-radius: 4px;
+	--minContent: 50;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.text-benefits {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	--minContent: 372;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* column-d */
+
+.column-d {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 12px;
+	flex-grow: 1;
+	--minContent: 175;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+/* end column-d*/
+
+
+
+
+/* row-g */
+
+.row-g {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+	--minContent: 150;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.row-lets-icons {
+	width: 20px;
+	flex-shrink: 0;
+	--minContent: 20;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.row-text3 {
+	--minContent: 126;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+/* end row-g*/
+
+
+.btn-c {
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 1.5;
+	letter-spacing: 0px;
+	text-align: center;
+	background-color: #ff5722;
+	padding: 14px 24px;
+	border-radius: 16px;
+	--minContent: 372;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* column-e */
+
+.column-e {
+	margin: 32px auto 0 auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	--minContent: 1000;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.column-row1 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 32px;
+	row-gap: 32px;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column-e*/
+
+
+
+
+/* column-f */
+
+.column-f {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column-f*/
+
+
+
+
+/* card-c */
+
+.card-c {
+	width: 100%;
+	max-width: 484px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	flex-shrink: 0;
+	background-color: #1f1f1f;
+	padding: 24px;
+	border-radius: 16px;
+	--minContent: 484;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.card-col-top2 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
+	color: #ffeb3b;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.333;
+	--minContent: 436;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.card-subtitle2 {
+	align-self: stretch;
+	--minContent: 436;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end card-c*/
+
+
+.img-d {
+	width: 32px;
+	flex-shrink: 0;
+	--minContent: 32;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+
+
+/* column-g */
+
+.column-g {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	text-align: left;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.column-subtitle4 {
+	color: #ff5722;
+	--min-font-size: 18; --max-font-size: 24; font-size: var(--interpolate);
+	font-weight: 700;
+	line-height: 1.333;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.column-text5 {
+	color: #fff;
+	--min-font-size: 15; --max-font-size: 16; font-size: var(--interpolate);
+	font-weight: 400;
+	line-height: 1.5;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column-g*/
+
+
+
+
+/* card-d */
+
+.card-d {
+	width: 210px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	flex-shrink: 0;
+	background-color: #1f1f1f;
+	padding: 24px 16px;
+	border-radius: 8px;
+	--minContent: 210;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.card-hugeicons {
+	width: 32px;
+	flex-shrink: 0;
+	align-self: center;
+	--minContent: 32;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.card-text4 {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.429;
+	--minContent: 178;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.card-text-bottom1 {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.333;
+	letter-spacing: -0.24px;
+	--minContent: 178;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end card-d*/
+
+
+
+
+/* column-h */
+
+.column-h {
+	margin-top: 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 48px;
+	color: #fff;
+	background: url(../assets/column/col.png) center / cover no-repeat;
+	padding: 64px 516px 64px 64px;
+	border-radius: 24px;
+	--minContent: 1000;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.column-col-top {
+	width: 100%;
+	max-width: 420px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	--minContent: 420;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.column-title {
+	--min-font-size: 30; --max-font-size: 48; font-size: var(--interpolate);
+	font-weight: 700;
+	line-height: 1.333;
+	--minContent: 420;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column-h*/
+
+
+
+
+/* column-i */
+
+.column-i {
+	margin: 0 auto;
+	width: 90%;
+	max-width: 1000px;
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	--minContent: 1000;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: CENTER;
+	--pConstraintVertical: MIN;
+}
+
+.column-row2 {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+	gap: 53px;
+	row-gap: 32px;
+	color: #fff;
+	text-align: center;
+	--minContent: 1000;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column-i*/
+
+
+
+
+/* column-j */
+
+.column-j {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.column-text7 {
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 24px;
+	--minContent: 490;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.column-row3 {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 16px;
+	font-weight: 400;
+	padding: 11px;
+	border-radius: 4px;
+	--minContent: 175;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end column-j*/
+
+
+
+
+/* header-b */
+
+.header-b {
+	container: header-b / inline-size;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 192px;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0px;
+	background-color: #1f1f1f;
+	padding: 32px 24px;
+	--minContent: 1048;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.header-nav2 {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	--minContent: 674;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.header-nav-items2 {
+	display: flex;
+	align-items: center;
+	gap: 72px;
+	font-weight: 400;
+	--minContent: 466;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.header-row-left {
+	display: flex;
+	align-items: center;
+	color: #ff5722;
+	font-weight: 500;
+	--minContent: 91;
+	--hSizing: HUG;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.header-mingcute {
+	width: 24px;
+	flex-shrink: 0;
+	--minContent: 24;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+/* end header-b*/
+
+
+
+
+/* nav-services */
+
+.nav-services {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	background-color: #1f1f1f;
+	padding: 0 12px 24px 12px;
+	--minContent: 1200;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end nav-services*/
+
+
+
+
+/* card-e */
+
+.card-e {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+	flex-grow: 1;
+	background-color: #181818;
+	padding: 14px 12px;
+	border-radius: 8px;
+	--minContent: 234;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: CENTER;
+}
+
+.card-group {
+	width: 28px;
+	flex-shrink: 0;
+	--minContent: 28;
+	--hSizing: FIXED;
+	--vSizing: FIXED;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.card-col3 {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	--minContent: 210;
+	--hSizing: FIXED;
+	--vSizing: HUG;
+	--pConstraintHorizontal: MIN;
+	--pConstraintVertical: MIN;
+}
+
+.card-text5 {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.286;
+	letter-spacing: -0.28px;
+	--minContent: 210;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.card-text-launch-your {
+	color: #ffeb3b;
+	font-size: 10px;
+	font-weight: 300;
+	line-height: 1.4;
+	letter-spacing: 0px;
+	--minContent: 210;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+
+.card-text-bottom2 {
+	align-self: stretch;
+	color: #f7f7f7;
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.167;
+	letter-spacing: 0px;
+	--minContent: 210;
+	--hSizing: FILL;
+	--vSizing: HUG;
+	--pConstraintHorizontal: STRETCH;
+	--pConstraintVertical: MIN;
+}
+/* end card-e*/
+
+
+
+
+/** breakpoints (margin / paddings) **/
+
+@media screen and (max-width: 1024px) {
+	.row-a {
+		padding-inline: var(--margin-sm);
+	}
+	.stats {
+		padding-inline: var(--margin-sm);
+	}
+	.header-a {
+		padding-inline: var(--margin-sm);
+	}
+	.main-section {
+		padding-inline: var(--margin-md);
+	}
+	.main-section-title {
+		margin-inline: 0;
+	}
+	.row-f {
+		margin-inline: 0;
+	}
+	.card-c {
+		padding-inline: var(--margin-sm);
+	}
+	.column-h {
+		padding-inline: var(--margin-md);
+	}
+	.header-b {
+		padding-inline: var(--margin-sm);
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.main-section {
+		padding-inline: var(--margin-sm);
+	}
+	.column-h {
+		padding-inline: var(--margin-sm);
+	}
+}
+
+
+
+/* container queries (flex rows) */
+
+@container body (width < 1047px) {
+	.row-a {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+}
+
+@container row-a (width < 672px) {
+	.row-nav {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.row-nav > * {
+		text-align: center;
+	}
+}
+
+@container about-us-section (width < 927px) {
+	.stats {
+		flex-direction: column;
+		align-items: center;
+		gap: 18px;
+	}
+}
+
+@container footer (width < 692px) {
+	.footer-nav-section {
+		flex-direction: column;
+		align-items: center;
+		gap: 30px;
+	}
+	.footer-nav-section > * {
+		margin-top: unset !important;
+	}
+}
+
+@container footer-nav-section (width < 548px) {
+	.footer-nav {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 22px;
+	}
+	.footer-nav > .col-left1 {
+		align-self: center;
+	}
+	.footer-nav > .col-right1 {
+		align-self: center;
+	}
+}
+
+@container body (width < 1047px) {
+	.header-a {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+}
+
+@container header-a (width < 673px) {
+	.header-nav1 {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.header-nav1 > * {
+		text-align: center;
+	}
+}
+
+@container main-section (width < 855px) {
+	.main-section-row-bottom {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 35px;
+	}
+	.main-section-row-bottom > .main-section-col-left {
+		align-self: center;
+	}
+	.main-section-row-bottom > .main-section-img1 {
+		align-self: center;
+	}
+	.main-section-row-bottom > .main-section-img-right {
+		align-self: center;
+	}
+}
+
+@container body (width < 999px) {
+	.row-e {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 100px;
+	}
+	.row-e > .main1 {
+		width: 100%;
+	}
+	.row-e > .card-right {
+		width: 100%;
+	}
+}
+
+@container card-col-bottom (width < 371px) {
+	.card-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+	.card-row > .col-left2 {
+		width: 100%;
+	}
+	.card-row > .col-right2 {
+		width: 100%;
+	}
+}
+
+@container body (width < 1047px) {
+	.header-b {
+		flex-direction: column;
+		align-items: center;
+		gap: 15px;
+	}
+}
+
+@container header-b (width < 673px) {
+	.header-nav2 {
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+	}
+	.header-nav2 > * {
+		text-align: center;
+	}
+}
+
+@container body (width < 1199px) {
+	.nav-services {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 22px;
+	}
+	.nav-services > * {
+		margin-left: unset !important; margin-right: unset !important;
+	}
+	.nav-services > .card15 {
+		width: 100%;
+	}
+	.nav-services > .card16 {
+		width: 100%;
+	}
+	.nav-services > .card17 {
+		width: 100%;
+	}
+	.nav-services > .card18 {
+		width: 100%;
+	}
+	.nav-services > .card19 {
+		width: 100%;
+	}
+}
