@@ -18,18 +18,25 @@
 		
 		<div class="row-nav">
 			<div class="row-nav-items">
-				<div class="row-b row-left1">
+				<div class="row-b row-left1" id="services-toggle">
 					<p class="text-a">Services</p>
 					<img src="assets/row/row-mingcute.png" class="row-mingcute" />
 				</div>
-				
+				<div id="services-dropdown" class="dropdown-menu">
+					<a href="mvp-accelarator.html">MVP Accelerator Program</a>
+					<a href="saa-s-optimization.html">SaaS Optimization & Growth Audit</a>
+					<a href="digital-transformation.html">Digital Transformation for SMEs</a>
+					<a href="digital-marketing.html">Digital Marketing</a>
+					<a href="high-conversion.html">High-Conversion Brand Websites</a>
+				</div>
+
 			<a href="index.html">Home</a>
 				<a href="projects.html">Projects</a>
 				<a href="career.html">Career</a>
 				<a href="about.html">About</a>
 			</div>
-			
-			<button class="btn-a row-btn hover-bright">Contact Us</button>
+
+			<a href="contact.html" class="btn-a row-btn hover-bright">Contact Us</a>
 		</div>
 	</header>
 	
@@ -250,7 +257,7 @@
 			</p>
 		</div>
 		
-		<button class="btn-a column-btn hover-bright">Contact Us</button>
+		<a href="contact.html" class="btn-a column-btn hover-bright">Contact Us</a>
 	</div>
 	
 	<footer class="footer footer1">
@@ -335,6 +342,25 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const servicesToggle = document.getElementById('services-toggle');
+			const servicesDropdown = document.getElementById('services-dropdown');
+
+			servicesToggle.addEventListener('click', function(e) {
+				e.preventDefault();
+				servicesDropdown.classList.toggle('show');
+			});
+
+			// Close dropdown when clicking outside
+			document.addEventListener('click', function(e) {
+				if (!servicesToggle.contains(e.target) && !servicesDropdown.contains(e.target)) {
+					servicesDropdown.classList.remove('show');
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>

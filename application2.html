@@ -29,7 +29,7 @@
 				<a href="about.html">About</a>
 			</div>
 			
-			<button class="btn-a header-btn1 hover-bright">Contact Us</button>
+			<a href="contact.html" class="btn-a header-btn1 hover-bright">Contact Us</a>
 		</div>
 	</header>
 	
@@ -93,6 +93,25 @@
 	</div>
 	
 	<button class="btn-a btn1 hover-dark">Submit</button>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const servicesToggle = document.getElementById('services-toggle');
+			const servicesDropdown = document.getElementById('services-dropdown');
+
+			servicesToggle.addEventListener('click', function(e) {
+				e.preventDefault();
+				servicesDropdown.classList.toggle('show');
+			});
+
+			// Close dropdown when clicking outside
+			document.addEventListener('click', function(e) {
+				if (!servicesToggle.contains(e.target) && !servicesDropdown.contains(e.target)) {
+					servicesDropdown.classList.remove('show');
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>

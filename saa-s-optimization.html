@@ -19,7 +19,7 @@
 		
 		<div class="row-nav">
 			<div class="row-nav-items">
-				<div class="row-b row-left1">
+				<div class="row-b row-left1 services-dropdown-toggle" id="services-toggle">
 					<p class="text-a">Services</p>
 					<img src="assets/row/row-mingcute.png" class="row-mingcute" />
 				</div>
@@ -29,8 +29,77 @@
 				<a href="about.html">About</a>
 			</div>
 			
-			<button class="btn-a row-btn hover-bright">Contact Us</button>
+			<a href="contact.html" class="btn-a row-btn hover-bright">Contact Us</a>
 		</div>
+
+		<div class="services-dropdown" id="services-dropdown">
+		<div class="nav-services nav-services3">
+			<a href="mvp-accelarator.html" class="card-e card15">
+				<img src="assets/card/card-group.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">MVP Accelerator Program</p>
+					<p class="card-text-launch-your">Launch Your Vision, Faster</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					We provide the end-to-end strategy, design, and engineering to build and launch your Minimum Viable Product, getting you to your first users and investors in record time.
+				</p>
+			</a>
+
+			<a href="saa-s-optimization.html" class="card-e card16">
+				<img src="assets/card/card-img.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">SaaS Optimization & Growth Audit</p>
+					<p class="card-text-launch-your">Unlock Your Product's Potential</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					Is your SaaS platform hitting a growth ceiling? We conduct a deep audit of your product's user experience and technical performance to identify key opportunities for improving retention, engagement, and profitability.
+				</p>
+			</a>
+
+			<a href="digital-transformation.html" class="card-e card17">
+				<img src="assets/card/card-group.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">Digital Transformation for SMEs</p>
+					<p class="card-text-launch-your">Modernize Your Operations</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					Replace inefficient workflows with custom digital solutions. We build powerful web and mobile applications that streamline your processes, boost productivity, and prepare your business for scalable growth.
+				</p>
+			</a>
+
+			<a href="digital-marketing.html" class="card-e card18">
+				<img src="assets/card/card-group.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">Digital Marketing</p>
+					<p class="card-text-launch-your">Build Your Audience & Drive Sales</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					A great product deserves a great audience. We create and manage data-driven ad campaigns, build a compelling social media presence, and execute strategies that convert prospects into loyal customers.
+				</p>
+			</a>
+
+			<a href="high-conversion.html" class="card-e card19">
+				<img src="assets/card/card-group.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">High-Conversion Brand Websites</p>
+					<p class="card-text-launch-your">Create an Unforgettable Brand Experience</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					Go beyond a standard template. We design and develop stunning, high-performance websites focused on brand storytelling and conversion rate optimization, turning your site into your most powerful marketing asset.
+				</p>
+			</a>
+		</div>
+	</div>
 	</header>
 	
 	<div class="main-section main-section1">
@@ -249,7 +318,7 @@
 			</p>
 		</div>
 		
-		<button class="btn-a column-btn hover-bright">Contact Us</button>
+		<a href="contact.html" class="btn-a column-btn hover-bright">Contact Us</a>
 	</div>
 	
 	<footer class="footer footer1">
@@ -334,6 +403,25 @@
 			</div>
 		</div>
 	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const servicesToggle = document.getElementById('services-toggle');
+			const servicesDropdown = document.getElementById('services-dropdown');
+
+			servicesToggle.addEventListener('click', function(e) {
+				e.preventDefault();
+				servicesDropdown.classList.toggle('show');
+			});
+
+			// Close dropdown when clicking outside
+			document.addEventListener('click', function(e) {
+				if (!servicesToggle.contains(e.target) && !servicesDropdown.contains(e.target)) {
+					servicesDropdown.classList.remove('show');
+				}
+			});
+		});
+	</script>
 </body>
 
 </html>

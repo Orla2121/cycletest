@@ -12,26 +12,94 @@
 
 <body>
 	<div class="row-a nav-bar">
-		<a href="index.html">
-			<div class="logo logo1">
-				<img src="assets/logo/logo-clip-path.png" class="logo-clip-path" />
-			</div>
-		</a>
+		<div class="logo logo1">
+			<img src="assets/logo/logo-clip-path.png" class="logo-clip-path" />
+		</div>
 
 		<div class="row-nav">
 			<div class="row-nav-items">
-				<div class="row-b row-left1">
+				<div class="row-b row-left1 services-dropdown-toggle" id="services-toggle">
 					<p class="text-a">Services</p>
 					<img src="assets/row/row-mingcute.png" class="row-mingcute" />
 				</div>
+				<a href="index.html">Home</a>
 				<a href="projects.html">Projects</a>
 				<a href="career.html">Career</a>
 				<a href="about.html">About</a>
 			</div>
-			<button class="btn-a row-btn hover-bright">Contact Us</button>
+			<a href="contact.html" class="btn-a row-btn hover-bright">Contact Us</a>
+		</div>
+
+		<div class="services-dropdown" id="services-dropdown">
+		<div class="nav-services nav-services3">
+			<a href="mvp-accelarator.html" class="card-e card15">
+				<img src="assets/card/card-group.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">MVP Accelerator Program</p>
+					<p class="card-text-launch-your">Launch Your Vision, Faster</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					We provide the end-to-end strategy, design, and engineering to build and launch your Minimum Viable Product, getting you to your first users and investors in record time.
+				</p>
+			</a>
+
+			<a href="saa-s-optimization.html" class="card-e card16">
+				<img src="assets/card/card-img.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">SaaS Optimization & Growth Audit</p>
+					<p class="card-text-launch-your">Unlock Your Product's Potential</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					Is your SaaS platform hitting a growth ceiling? We conduct a deep audit of your product's user experience and technical performance to identify key opportunities for improving retention, engagement, and profitability.
+				</p>
+			</a>
+
+			<a href="digital-transformation.html" class="card-e card17">
+				<img src="assets/card/card-group.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">Digital Transformation for SMEs</p>
+					<p class="card-text-launch-your">Modernize Your Operations</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					Replace inefficient workflows with custom digital solutions. We build powerful web and mobile applications that streamline your processes, boost productivity, and prepare your business for scalable growth.
+				</p>
+			</a>
+
+			<a href="digital-marketing.html" class="card-e card18">
+				<img src="assets/card/card-group.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">Digital Marketing</p>
+					<p class="card-text-launch-your">Build Your Audience & Drive Sales</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					A great product deserves a great audience. We create and manage data-driven ad campaigns, build a compelling social media presence, and execute strategies that convert prospects into loyal customers.
+				</p>
+			</a>
+
+			<a href="high-conversion.html" class="card-e card19">
+				<img src="assets/card/card-group.png" class="card-group" />
+
+				<div class="card-col3">
+					<p class="card-text5">High-Conversion Brand Websites</p>
+					<p class="card-text-launch-your">Create an Unforgettable Brand Experience</p>
+				</div>
+
+				<p class="card-text-bottom2">
+					Go beyond a standard template. We design and develop stunning, high-performance websites focused on brand storytelling and conversion rate optimization, turning your site into your most powerful marketing asset.
+				</p>
+			</a>
 		</div>
 	</div>
-	
+	</div>
+
 	<div class="main-section1 card-dark3">
 		<div class="title-b title1">
 			<h1 class="title-a">Projects</h1>
@@ -42,45 +110,45 @@
 		
 		<div class="main-section-projects">
 			<div class="main-section-nav">
-				<a class="text-e main-section-link-all" href="#">All</a>
-				<p class="text-a">Websites</p>
-				<p class="text-a">Applications</p>
-				<p class="text-a">Software</p>
-				<p class="text-a">UI/UX Design</p>
-				<p class="text-a">Marketing</p>
+				<a class="text-e main-section-link-all filter-link active" href="#" data-filter="all">All</a>
+				<a class="text-a filter-link" href="#" data-filter="websites">Websites</a>
+				<a class="text-a filter-link" href="#" data-filter="applications">Applications</a>
+				<a class="text-a filter-link" href="#" data-filter="software">Software</a>
+				<a class="text-a filter-link" href="#" data-filter="ui-ux-design">UI/UX Design</a>
+				<a class="text-a filter-link" href="#" data-filter="marketing">Marketing</a>
 			</div>
 			
 			<div class="main-section-grid">
-				<div class="project-card project-card1">
+				<div class="project-card project-card1" data-category="ui-ux-design">
 					<img src="assets/projects/project-card/project-card-img1.png" class="project-card-img" />
-					
+
 					<div class="card-bottom">
 						<p class="card-text-a card-bottom-text">Reflecty - Intelligent Journal</p>
 						<p class="card-text-a card-text-ui-ux-design">UI/UX Design</p>
 					</div>
 				</div>
-				
-				<div class="project-card project-card2">
+
+				<div class="project-card project-card2" data-category="software">
 					<img src="assets/projects/project-card/project-card-img2.png" class="project-card-img" />
-					
+
 					<div class="card-bottom">
 						<p class="card-text-a card-bottom-text">GDPR Compliance Software</p>
-						<p class="card-text-a card-text-ui-ux-design">UI/UX Design</p>
+						<p class="card-text-a card-text-ui-ux-design">Software</p>
 					</div>
 				</div>
-				
-				<div class="project-card project-card3">
+
+				<div class="project-card project-card3" data-category="applications">
 					<img src="assets/projects/project-card/project-card-img3.png" class="project-card-img" />
-					
+
 					<div class="card-bottom">
 						<p class="card-text-a card-bottom-text">User Story Creator + Sales Expert</p>
-						<p class="card-text-a card-text-ui-ux-design">UI/UX Design</p>
+						<p class="card-text-a card-text-ui-ux-design">Applications</p>
 					</div>
 				</div>
-				
-				<div class="project-card project-card4">
+
+				<div class="project-card project-card4" data-category="ui-ux-design">
 					<img src="assets/projects/project-card/project-card-img4.png" class="project-card-img" />
-					
+
 					<div class="card-bottom">
 						<p class="card-text-a card-bottom-text">GymStreak - AI Personal Trainer</p>
 						<p class="card-text-a card-text-ui-ux-design">UI/UX Design</p>
@@ -89,6 +157,50 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const servicesToggle = document.getElementById('services-toggle');
+			const servicesDropdown = document.getElementById('services-dropdown');
+
+			servicesToggle.addEventListener('click', function(e) {
+				e.preventDefault();
+				servicesDropdown.classList.toggle('show');
+			});
+
+			// Close dropdown when clicking outside
+			document.addEventListener('click', function(e) {
+				if (!servicesToggle.contains(e.target) && !servicesDropdown.contains(e.target)) {
+					servicesDropdown.classList.remove('show');
+				}
+			});
+
+			// Project filtering functionality
+			const filterLinks = document.querySelectorAll('.filter-link');
+			const projectCards = document.querySelectorAll('.project-card');
+
+			filterLinks.forEach(link => {
+				link.addEventListener('click', function(e) {
+					e.preventDefault();
+
+					// Remove active class from all links
+					filterLinks.forEach(l => l.classList.remove('active'));
+					// Add active class to clicked link
+					this.classList.add('active');
+
+					const filter = this.getAttribute('data-filter');
+
+					projectCards.forEach(card => {
+						if (filter === 'all' || card.getAttribute('data-category') === filter) {
+							card.style.display = 'block';
+						} else {
+							card.style.display = 'none';
+						}
+					});
+				});
+			});
+		});
+	</script>
 </body>
 
 </html>
